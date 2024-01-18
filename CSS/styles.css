@@ -85,6 +85,20 @@ ul li a{
     width: 100%;
 }
 
+/* our sponsors container styles  */
+
+.sponsors-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.sponsor > img{
+    width: 100%;
+}
+
 
 
 
@@ -109,6 +123,9 @@ ul li a{
     .banner-img{
         margin-bottom: 3rem;
     }
+    .sponsors-container{
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -127,5 +144,8 @@ ul li a{
     }
     .banner-img{
         margin-bottom: 3rem;
+    }
+    .sponsors-container{
+        flex-wrap: wrap;
     }
 }
