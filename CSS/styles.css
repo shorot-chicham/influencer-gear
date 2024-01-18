@@ -2,12 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@500&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=PT+Serif&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Sora:wght@100;200;300;400;500;600;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-.space{
+
+.space {
     margin-left: 4rem;
     margin-right: 4rem;
 }
@@ -15,7 +16,7 @@
 
 
 /* nav container styles  */
-.nav-content{
+.nav-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,35 +24,36 @@
     margin-top: 0.8rem;
 }
 
-.tab-section > ul{
+.tab-section>ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
 }
 
-.tab-section > ul > li{
+.tab-section>ul>li {
     list-style: none;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     color: #000;
 }
 
-.tab-section{
+.tab-section {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
 
-.search-icon, .cart-icon{
+.search-icon,
+.cart-icon {
     cursor: pointer;
 }
 
 /* banner container styles  */
-.banner-container{
+.banner-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,12 +66,13 @@ ul li a{
     margin-bottom: 3rem;
 }
 
-.banner-title{
+.banner-title {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 16px;
 }
-.banner-btn{
+
+.banner-btn {
     background-color: #E02C6D;
     display: flex;
     justify-content: center;
@@ -81,13 +84,14 @@ ul li a{
     color: #fff;
     margin-top: 16px;
 }
-.banner-img > img{
+
+.banner-img>img {
     width: 100%;
 }
 
 /* our sponsors container styles  */
 
-.sponsors-container{
+.sponsors-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,9 +99,74 @@ ul li a{
     margin-bottom: 5rem;
 }
 
-.sponsor > img{
+.sponsor>img {
     width: 100%;
 }
+
+/* Popular Collection container styles  */
+
+.popular-collection-container{
+    margin-bottom: 5rem;
+}
+
+.popular-collection-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.collection-title{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+.collection-cart {
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    background: #FFF;
+    padding: 15px;
+}
+.collection-cart > h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.collection-cart img {
+    width: 100%;
+}
+.price{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.rating {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+}
+
+.rating img {
+    width: 25px;
+    height: auto;
+}
+.see-more{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
 
 
 
@@ -107,24 +176,30 @@ ul li a{
 /* Responsive for Mobile device  */
 
 @media screen and (max-width: 676px) {
-    .space{
+    .space {
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    .tab-section > ul{
+
+    .tab-section>ul {
         display: none;
     }
 
-    .banner-container{
+    .banner-container {
         flex-direction: column-reverse;
         background-position: top;
         background-size: 100% 500px;
     }
-    .banner-img{
+
+    .banner-img {
         margin-bottom: 3rem;
     }
-    .sponsors-container{
+
+    .sponsors-container {
         flex-wrap: wrap;
+    }
+    .popular-collection-content{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -133,19 +208,25 @@ ul li a{
 /* Responsive for Tablet device  */
 
 @media screen and (min-width: 676px) and (max-width: 960px) {
-    .space{
+    .space {
         margin-left: 2rem;
         margin-right: 2rem;
     }
-    .banner-container{
+
+    .banner-container {
         flex-direction: column-reverse;
         background-position: top;
         background-size: 100% 500px;
     }
-    .banner-img{
+
+    .banner-img {
         margin-bottom: 3rem;
     }
-    .sponsors-container{
+
+    .sponsors-container {
         flex-wrap: wrap;
+    }
+    .popular-collection-content{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
