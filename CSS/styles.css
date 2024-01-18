@@ -83,6 +83,7 @@ ul li a {
     border-radius: 40px;
     color: #fff;
     margin-top: 16px;
+    cursor: pointer;
 }
 
 .banner-img>img {
@@ -101,6 +102,7 @@ ul li a {
 
 .sponsor>img {
     width: 100%;
+    cursor: pointer;
 }
 
 /* Popular Collection container styles  */
@@ -198,8 +200,30 @@ ul li a {
     border: none;
     border-radius: 3px;
     margin-top: 16px;
+    cursor: pointer;
 }
 
+/* footer container start  */
+footer{
+    background-color: #0A0826;
+    color: #fff;
+}
+.footer-content{
+    text-align: center;
+    padding: 3rem;
+}
+
+.social-site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 17px;
+}
+
+.social-site > img{
+    cursor: pointer;
+}
 
 
 
@@ -235,6 +259,12 @@ ul li a {
     .popular-collection-content{
         grid-template-columns: repeat(1, 1fr);
     }
+    .featured-products-container{
+        flex-direction: column;
+    }
+    .featured-img > img{
+        width: 100%;
+    }
 }
 
 
@@ -262,5 +292,11 @@ ul li a {
     }
     .popular-collection-content{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .featured-products-container{
+        flex-direction: column;
+    }
+    .featured-img > img{
+        width: 100%;
     }
 }
