@@ -165,6 +165,40 @@ ul li a {
     font-weight: 700;
     text-decoration: none;
 }
+/* Featured products container styles  */
+.featured-products-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.featured-title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #0A0826;
+    margin-bottom: 16px;
+}
+
+.featured-description{
+    font-size: 16px;
+    font-weight: 600;
+    color: #6C6C6C;
+}
+
+.featured-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    color: #fff;
+    background-color: #E02C6D;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 16px;
+}
 
 
 
